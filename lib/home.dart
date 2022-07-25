@@ -25,7 +25,10 @@ class _HomeState extends State<Home> {
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.only(top: size.height * 0.02),
-          child: TreeView(nodes: [
+          child: TreeView(
+            indent:  size.width * 0.06,
+
+            nodes: [
             TreeNode(
                 content: Widgets.nodeContainer(
                   totalAchievedIncome: myData['TotalAchievedIncome'],
